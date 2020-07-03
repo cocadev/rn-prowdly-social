@@ -1,4 +1,4 @@
-# prwodly-social
+# React-Native prwodly-social App
 
 react-native 0.61.4
 
