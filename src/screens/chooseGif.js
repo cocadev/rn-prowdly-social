@@ -42,7 +42,7 @@ export default class ChooseGifScreen extends Component {
 
   onCallGif(tag) {
     this.setState({ isLoading: true });
-    axios.get(`${TENOR_API_URL}search?q=${tag}&key=${TENOR_API_KEY}&limit=18`).then(res => {
+    axios.get(`${TENOR_API_URL}search?q=${tag}&key=${TENOR_API_KEY}&limit=48`).then(res => {
       const { results } = res.data;
       this.setState({ results, isLoading: false });
     });

@@ -3,7 +3,6 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, Animated } from 'react-native';
 import ParallaxScroll from '@monterosa/react-native-parallax-scroll';
-import * as AnimatedImplementation from 'react-native/Libraries/Animated/src/AnimatedImplementation';
 import { p } from '../common/normalize';
 import { colors } from '../common/colors';
 import { AvatarAtom } from '../components/postCard/avatarAtom';
@@ -20,8 +19,6 @@ import { MyStatusBar } from '../components/MyStatusBar';
 const marginTop = getStatusBarHeight();
 const headerHeight = 80;
 const parallaxHeight = 150;
-
-const AnimatedAvatarAtom = AnimatedImplementation.createAnimatedComponent(AvatarAtom, {});
 
 export default class UserProfile extends Component {
   isFromMainScreen = () => {
@@ -65,7 +62,6 @@ export default class UserProfile extends Component {
             ]}
           >
             <MyStatusBar backgroundColor={colors.PURPLE} barStyle="light-content" />
-            <AnimatedAvatarAtom item={Me} profile style={{ marginLeft: animatedLeft, flex: 1 }} />
             {!this.isFromMainScreen() && (
               <TouchableOpacity style={styles.salute}>
                 <Text style={styles.saluteText}>Salute</Text>

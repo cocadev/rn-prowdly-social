@@ -24,7 +24,6 @@ DerivedData
 # Android/IntelliJ
 #
 build/
-android/app/build/
 .idea
 .gradle
 local.properties
@@ -35,15 +34,13 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-yarn.lock
-package-lock.json
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
 !debug.keystore
-.gradle/
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the

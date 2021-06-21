@@ -42,7 +42,7 @@ export function RightIcon() {
 
 export function MoreIcon(props) {
   const { color } = props;
-  return <Ionicons name="ios-more" size={22} color={color} style={{ marginRight: p(7) }} />;
+  return <Ionicons name="md-settings" size={22} color={color} style={{ marginRight: p(7) }} />;
 }
 
 export function EditIcon() {
